@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:XamarinTest.ViewModels;assembly=XamarinTest"
+             
+             x:Class="XamarinTest.Views.ProfileView" Title="Profile View">
+
+  <!--<ContentPage.BindingContext>
+    <viewModels:MainViewModel/>
+  </ContentPage.BindingContext>-->
+
+  <StackLayout>
+    <Label Text="User profile" HorizontalTextAlignment="Center"/>
+    <Label Text="{Binding Username}" TextColor="Fuchsia" HorizontalTextAlignment="Center"/>
+    <Label Text="{Binding EmailAddress}" TextColor="Green" HorizontalTextAlignment="Center"/>
+    <Label Text="{Binding PhotoUrl}" TextColor="Blue" HorizontalTextAlignment="Center"/>
+    <Image Source="{Binding PhotoUrl}" BackgroundColor="Gray" HorizontalOptions="Center"/>
+  </StackLayout>
+</ContentPage>
